@@ -1,0 +1,75 @@
+.footer {
+    background: rgba(125, 66, 131, 1);
+    color: #fff;
+    padding: 40px 20px;
+    background-image: url("/images/Lines.png");
+    background-repeat: no-repeat;
+    width: 100%;
+
+    
+  }
+  
+  .container {
+  height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .logo img {
+    width: 135px;
+
+  }
+  
+  .links {
+    margin: 0 20px;
+  }
+  
+  .links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .badge {
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+  }
+  
+  .social a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .social a .icon {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+  
+  .copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  

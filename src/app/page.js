@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Head from "next/head";
 import ClientOpinions from './component/ClientOpinions';
-
+import Footer from './component/footer/Footer';
 
 export default function Home() {
   return (
@@ -254,7 +254,14 @@ export default function Home() {
         </form>
       </div>
     </section>
-      </div>
+  
+   
+            <Footer />
+        
+
+
+   </div>
+     
      
   );
 
