@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./ClientOpinions.module.css";
 
+
 const ClientOpinions = () => {
   const testimonials = [
     {
@@ -43,6 +44,11 @@ const ClientOpinions = () => {
           <span className={styles.dot} key={index}></span>
         ))}
       </div>
+      <div className="slider">
+
+  <button className="slider-button slider-button-prev">&lt;</button>
+  <button className="slider-button slider-button-next">&gt;</button> 
+</div>
     </div>
   );
 };

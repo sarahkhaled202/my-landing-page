@@ -240,7 +240,7 @@
   transform: scale(0.95);
 }
 
-
+/* paragraph stat */
 .textSection {
  
   width: 50%;
@@ -282,7 +282,7 @@
   grid-template-columns: 1fr; /* عمود واحد فقط */
 }
 
-/* القسم الخاص بالرسوم البيانية */
+/*++++++++++++++++++ chart+++++++++++++++++++*/
 .chartsSection {
   padding: 85px;
   margin-top: 50px;
@@ -295,9 +295,13 @@
 }
 
 .charts {
-  display: grid;
+   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 20px; 
+
+ /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* يتكيف مع العرض المتاح */
+  /* gap: 20px;*/ 
 }
 
 .chart {
@@ -309,12 +313,7 @@
   color: #fff;
 }
 
-.pCard{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center ;
-}
+/*++++++++++++++++++ آNEWs +++++++++++++++++++*/
 .sectionNews {
   max-width: 1200px;
   margin: auto;
@@ -347,6 +346,8 @@ width: 100%;
   cursor: pointer;
 }
 
+
+/*++++++++++++++++++ PRICE +++++++++++++++++++*/
 .pricingSection {
   margin-bottom: 40px;
   text-align: center;
@@ -403,9 +404,7 @@ width: 100%;
   padding: 1.5rem;
   border-radius: 8px;
   grid-column: 1; /* البطاقة الكبيرة تبقى في العمود الأول */
-
-  
-margin-top: 1.3rem;
+  margin-top: 1.3rem;
 }
 .cardLarge h2 {
   font-size: 1.2rem;
@@ -670,3 +669,164 @@ align-items: flex-start;
   text-align: left;
   
 } 
+ /* Media query for mobile phones (480px and below) */
+ @media (max-width: 480px) {
+  .servicesGrid {
+    grid-template-columns: 1fr; /* عمود واحد */
+  }
+  .serviceItem h2 {
+    font-size: 1rem;
+  }
+  .serviceItem p {
+    font-size: 0.8rem;
+  }
+}
+
+
+  .section {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .section h2 {
+    font-size: 1.2rem;
+  }
+
+  .section p {
+    font-size: 0.8rem;
+  }
+  .readMoreButton {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+ .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة في الصف الواحد */
+    gap: 20px; /* مسافة بين العناصر */
+    margin-top: 20px;
+  }
+  
+  .serviceItem {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .serviceItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .serviceImage {
+    width: 30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .serviceItem h2 {
+    font-size: 1.2rem;
+    color: rgb(234, 219, 219);
+    margin-bottom: 10px;
+  }
+  .serviceItem p {
+    font-size: 1rem;
+    color: rgb(151, 148, 148);
+  }
+  
+ 
+
+ 
+ .philosophySection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px 0;
+  color: #fff;
+  padding: 85px;
+  text-align: left;
+  
+} 
+/* nav */
+
+/* تحسين للهواتف الصغيرة جداً */
+@media (max-width: 480px) {
+
+  /* قم بتعديل الأنماط هنا لتناسب الشاشات الصغيرة */
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+.mainButtons {
+  gap: 5px; /* تقليل المسافات بين الأزرار */
+}
+
+.mainImage {
+  width: 100%; /* تجعل الصورة تأخذ العرض الكامل */
+}
+
+.secondaryImage {
+  width: 80%; /* تعديل حجم الصورة الثانوية */
+}
+
+/* partner */
+.partnersSection h2 {
+  font-size: 1.3rem; /* حجم أصغر للعناوين */
+}
+
+.partnersContainer {
+  gap: 8px; /* مسافات أقل بين الصور */
+}
+
+.partnerImage {
+  width: 60px; /* تقليل حجم الصور */
+}
+/*  paragraph stat */
+.textSection {
+  width: 50%; /* عرض كامل على شاشات صغيرة جداً */
+}
+
+.statsSection {
+  grid-template-columns: 1fr; /* عرض واحد */
+}
+/*++++++++++++++++++ chart +++++++++++++++++++*/
+
+.charts {
+  grid-template-columns: 1fr; /* عرض واحد فقط */
+  row-gap: 10px;
+   
+}
+/*++++++++++++++++++ آNEW +++++++++++++++++++*/
+
+.header {
+  display: flex;
+  flex-direction: column; /* تغيير الاتجاه إلى أفقي على الشاشات الأكبر */
+  justify-content: space-between;
+}
+.grid {
+  grid-template-columns: 1fr;
+  width: 40%;
+ justify-self: center;
+
+}
+.gridprice {
+  grid-template-columns: 1fr; /* عمود واحد فقط */
+  justify-self: center;
+  width: 40%;
+}
+.content {
+  padding-left: 20px; /* تقليل المسافة الداخلية */
+}
+}
+
+

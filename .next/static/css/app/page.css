@@ -243,7 +243,7 @@
   transform: scale(0.95);
 }
 
-
+/* paragraph stat */
 .page_textSection__sT5QS {
  
   width: 50%;
@@ -286,7 +286,7 @@
   grid-template-columns: 1fr; /* عمود واحد فقط */
 }
 
-/* القسم الخاص بالرسوم البيانية */
+/*++++++++++++++++++ chart+++++++++++++++++++*/
 .page_chartsSection__RH1E1 {
   padding: 85px;
   margin-top: 50px;
@@ -299,10 +299,14 @@
 }
 
 .page_charts__uvd7G {
-  display: grid;
+   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  gap: 20px;
+  gap: 20px; 
+
+ /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* يتكيف مع العرض المتاح */
+  /* gap: 20px;*/ 
 }
 
 .page_chart__KpNAI {
@@ -314,12 +318,7 @@
   color: #fff;
 }
 
-.page_pCard__AlQ7L{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center ;
-}
+/*++++++++++++++++++ آNEWs +++++++++++++++++++*/
 .page_sectionNews__GQXMf {
   max-width: 1200px;
   margin: auto;
@@ -352,6 +351,8 @@ width: 100%;
   cursor: pointer;
 }
 
+
+/*++++++++++++++++++ PRICE +++++++++++++++++++*/
 .page_pricingSection__SpLw4 {
   margin-bottom: 40px;
   text-align: center;
@@ -412,9 +413,7 @@ width: 100%;
   padding: 1.5rem;
   border-radius: 8px;
   grid-column: 1; /* البطاقة الكبيرة تبقى في العمود الأول */
-
-  
-margin-top: 1.3rem;
+  margin-top: 1.3rem;
 }
 .page_cardLarge__mtcp6 h2 {
   font-size: 1.2rem;
@@ -681,6 +680,169 @@ align-items: flex-start;
   text-align: left;
   
 } 
+ /* Media query for mobile phones (480px and below) */
+ @media (max-width: 480px) {
+  .page_servicesGrid__plSir {
+    grid-template-columns: 1fr; /* عمود واحد */
+  }
+  .page_serviceItem__VFzNf h2 {
+    font-size: 1rem;
+  }
+  .page_serviceItem__VFzNf p {
+    font-size: 0.8rem;
+  }
+}
+
+
+  .page_section__61PEw {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .page_section__61PEw h2 {
+    font-size: 1.2rem;
+  }
+
+  .page_section__61PEw p {
+    font-size: 0.8rem;
+  }
+  .page_readMoreButton__b0HC7 {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+ .page_servicesGrid__plSir {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة في الصف الواحد */
+    grid-gap: 20px;
+    gap: 20px; /* مسافة بين العناصر */
+    margin-top: 20px;
+  }
+  
+  .page_serviceItem__VFzNf {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .page_serviceItem__VFzNf:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .page_serviceImage__T8FHx {
+    width: 30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .page_serviceItem__VFzNf h2 {
+    font-size: 1.2rem;
+    color: rgb(234, 219, 219);
+    margin-bottom: 10px;
+  }
+  .page_serviceItem__VFzNf p {
+    font-size: 1rem;
+    color: rgb(151, 148, 148);
+  }
+  
+ 
+
+ 
+ .page_philosophySection__6G2s4 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px 0;
+  color: #fff;
+  padding: 85px;
+  text-align: left;
+  
+} 
+/* nav */
+
+/* تحسين للهواتف الصغيرة جداً */
+@media (max-width: 480px) {
+
+  /* قم بتعديل الأنماط هنا لتناسب الشاشات الصغيرة */
+  .page_header__kVzhN {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page_nav__zpG_3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page_headerButtons__ERh_S {
+    flex-direction: column;
+    align-items: center;
+  }
+.page_mainButtons__S7hxa {
+  gap: 5px; /* تقليل المسافات بين الأزرار */
+}
+
+.page_mainImage__4lTcr {
+  width: 100%; /* تجعل الصورة تأخذ العرض الكامل */
+}
+
+.page_secondaryImage__J40Bs {
+  width: 80%; /* تعديل حجم الصورة الثانوية */
+}
+
+/* partner */
+.page_partnersSection__V2FwW h2 {
+  font-size: 1.3rem; /* حجم أصغر للعناوين */
+}
+
+.page_partnersContainer__JI5lM {
+  gap: 8px; /* مسافات أقل بين الصور */
+}
+
+.page_partnerImage__aUaHa {
+  width: 60px; /* تقليل حجم الصور */
+}
+/*  paragraph stat */
+.page_textSection__sT5QS {
+  width: 50%; /* عرض كامل على شاشات صغيرة جداً */
+}
+
+.page_statsSection__X1He5 {
+  grid-template-columns: 1fr; /* عرض واحد */
+}
+/*++++++++++++++++++ chart +++++++++++++++++++*/
+
+.page_charts__uvd7G {
+  grid-template-columns: 1fr; /* عرض واحد فقط */
+  row-gap: 10px;
+   
+}
+/*++++++++++++++++++ آNEW +++++++++++++++++++*/
+
+.page_header__kVzhN {
+  display: flex;
+  flex-direction: column; /* تغيير الاتجاه إلى أفقي على الشاشات الأكبر */
+  justify-content: space-between;
+}
+.page_grid__f5Kdy {
+  grid-template-columns: 1fr;
+  width: 40%;
+ justify-self: center;
+
+}
+.page_gridprice__uiKQr {
+  grid-template-columns: 1fr; /* عمود واحد فقط */
+  justify-self: center;
+  width: 40%;
+}
+.page_content__kDoxQ {
+  padding-left: 20px; /* تقليل المسافة الداخلية */
+}
+}
+
+
+
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/component/ClientOpinions.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/
@@ -753,7 +915,18 @@ align-items: flex-start;
   .ClientOpinions_dot__Yc6Pf.ClientOpinions_active__UYxqD {
     opacity: 1;
   }
-  
+  @media (max-width: 480px) {
+    .ClientOpinions_slider-container__zxtXA {
+      display: flex;
+      justify-content: center; /* محاذاة الحاوية في المنتصف أفقيًا */
+      align-items: center; /* محاذاة المحتوى داخل الحاوية في المنتصف رأسيًا */
+      height: 100vh; /* يمكنك تعديل هذا القيمة حسب الحاجة */
+    }
+    
+    .ClientOpinions_slider__YuhkX {
+      /* ... باقي الأنماط ... */
+      width: 80%; /* أو أي عرض مناسب */
+    }}
 /*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/component/footer/Footer.module.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************/
@@ -761,20 +934,33 @@ align-items: flex-start;
     background: rgba(125, 66, 131, 1);
     color: #fff;
     padding: 40px 20px;
-    background-image: url("/images/Lines.png");
+    background-image: url("/images/ll.png");
     background-repeat: no-repeat;
     width: 100%;
 
-    
-  }
-  
-  .Footer_container__Z_ejX {
-  height: 550px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+   
     justify-content: space-between;
     align-items: flex-start;
   }
+  .Footer_list__6xyHu{
+    width: 75%;
+    display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 32px;
+  margin-left: 20px;
+  }
+  .Footer_all__MxfRw{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 50px;
+    
+  }
+
   
   .Footer_logo__mKT7C img {
     width: 135px;
@@ -824,6 +1010,7 @@ align-items: flex-start;
   }
   
   .Footer_copyright__jHAsY {
+    width: 100%;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 20px;
@@ -831,4 +1018,118 @@ align-items: flex-start;
     padding-top: 20px;
     color: rgba(255, 255, 255, 0.7);
   }
+  /* iphone */
+  /* General iPhone Styles */
+@media only screen and (max-width: 414px) {
+  .Footer_footer__h2tcp {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    background-size: cover; /* Ensure background image scales correctly */
+    align-items: center; /* Center-align content */
+  }
+
+  .Footer_list__6xyHu {
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for mobile */
+    gap: 16px; /* Reduce gap between items */
+    margin-left: 0; /* Align to the center */
+  }
+
+  .Footer_all__MxfRw {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center-align sections */
+    gap: 20px; /* Add space between sections */
+    margin-right: 0;
+  }
+
+  .Footer_logo__mKT7C img {
+    width: 100px; /* Scale down logo for smaller screens */
+  }
+
+  .Footer_links__6Q9BZ {
+    margin: 0;
+    text-align: center; /* Center-align text */
+  }
+
+  .Footer_links__6Q9BZ h4 {
+    font-size: 1rem; /* Reduce font size */
+    margin-bottom: 5px;
+  }
+
+  .Footer_links__6Q9BZ li {
+    font-size: 0.9rem; /* Adjust font size */
+    margin-bottom: 5px; /* Reduce spacing */
+  }
+
+  .Footer_social__LStrP a {
+    font-size: 0.9rem; /* Adjust icon size */
+    margin-bottom: 5px; /* Reduce spacing */
+  }
+
+  .Footer_social__LStrP a .Footer_icon__SwoA_ {
+    font-size: 1rem; /* Adjust icon size */
+    margin-right: 5px;
+  }
+
+  .Footer_copyright__jHAsY {
+    font-size: 0.8rem; /* Smaller font size */
+    padding-top: 10px; /* Reduce padding */
+  }
   
+}
+
+@media only screen and (max-width: 414px) {
+  .Footer_footer__h2tcp {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    background-size: cover; /* Ensure background image scales correctly */
+    align-items: center; 
+    text-align: center; /* Center-align content horizontally */
+  }
+
+  .Footer_list__6xyHu {
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for mobile */
+    gap: 16px; /* Reduce gap between items */
+    margin-left: 0; /* Align to the center */
+  }
+
+  .Footer_all__MxfRw {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center-align sections */
+    gap: 20px; /* Add space between sections */
+    margin-right: 0;
+  }
+
+  .Footer_logo__mKT7C img {
+    width: 100px; /* Scale down logo for smaller screens */
+  }
+
+  .Footer_links__6Q9BZ {
+    margin: 0;
+    text-align: center; /* Center-align text */
+  }
+
+  .Footer_links__6Q9BZ h4 {
+    font-size: 1rem; /* Reduce font size */
+    margin-bottom: 5px;
+  }
+
+  .Footer_links__6Q9BZ li {
+    font-size: 0.9rem; /* Adjust font size */
+    margin-bottom: 5px; /* Reduce spacing */
+  }
+
+  .Footer_social__LStrP a {
+    font-size: 0.9rem; /* Adjust icon size */
+    margin-bottom: 5px; /* Reduce spacing */
+  }
+
+  .Footer_social__LStrP a .Footer_icon__SwoA_ {
+    font-size: 1rem; /* Adjust icon size */
+    margin-right: 5px;
+  }
+
+  .Footer_copyright__jHAsY {
+    font-size: 0.8rem; /* Smaller font size */
+    padding-top: 10px; /* Reduce padding */
+  }
+}

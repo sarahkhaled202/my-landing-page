@@ -2,20 +2,33 @@
     background: rgba(125, 66, 131, 1);
     color: #fff;
     padding: 40px 20px;
-    background-image: url("/images/Lines.png");
+    background-image: url("/images/ll.png");
     background-repeat: no-repeat;
     width: 100%;
 
-    
-  }
-  
-  .container {
-  height: 550px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+   
     justify-content: space-between;
     align-items: flex-start;
   }
+  .list{
+    width: 75%;
+    display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 32px;
+  margin-left: 20px;
+  }
+  .all{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 50px;
+    
+  }
+
   
   .logo img {
     width: 135px;
@@ -65,6 +78,7 @@
   }
   
   .copyright {
+    width: 100%;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 20px;
@@ -72,4 +86,118 @@
     padding-top: 20px;
     color: rgba(255, 255, 255, 0.7);
   }
+  /* iphone */
+  /* General iPhone Styles */
+@media only screen and (max-width: 414px) {
+  .footer {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    background-size: cover; /* Ensure background image scales correctly */
+    align-items: center; /* Center-align content */
+  }
+
+  .list {
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for mobile */
+    gap: 16px; /* Reduce gap between items */
+    margin-left: 0; /* Align to the center */
+  }
+
+  .all {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center-align sections */
+    gap: 20px; /* Add space between sections */
+    margin-right: 0;
+  }
+
+  .logo img {
+    width: 100px; /* Scale down logo for smaller screens */
+  }
+
+  .links {
+    margin: 0;
+    text-align: center; /* Center-align text */
+  }
+
+  .links h4 {
+    font-size: 1rem; /* Reduce font size */
+    margin-bottom: 5px;
+  }
+
+  .links li {
+    font-size: 0.9rem; /* Adjust font size */
+    margin-bottom: 5px; /* Reduce spacing */
+  }
+
+  .social a {
+    font-size: 0.9rem; /* Adjust icon size */
+    margin-bottom: 5px; /* Reduce spacing */
+  }
+
+  .social a .icon {
+    font-size: 1rem; /* Adjust icon size */
+    margin-right: 5px;
+  }
+
+  .copyright {
+    font-size: 0.8rem; /* Smaller font size */
+    padding-top: 10px; /* Reduce padding */
+  }
   
+}
+
+@media only screen and (max-width: 414px) {
+  .footer {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    background-size: cover; /* Ensure background image scales correctly */
+    align-items: center; 
+    text-align: center; /* Center-align content horizontally */
+  }
+
+  .list {
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for mobile */
+    gap: 16px; /* Reduce gap between items */
+    margin-left: 0; /* Align to the center */
+  }
+
+  .all {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center-align sections */
+    gap: 20px; /* Add space between sections */
+    margin-right: 0;
+  }
+
+  .logo img {
+    width: 100px; /* Scale down logo for smaller screens */
+  }
+
+  .links {
+    margin: 0;
+    text-align: center; /* Center-align text */
+  }
+
+  .links h4 {
+    font-size: 1rem; /* Reduce font size */
+    margin-bottom: 5px;
+  }
+
+  .links li {
+    font-size: 0.9rem; /* Adjust font size */
+    margin-bottom: 5px; /* Reduce spacing */
+  }
+
+  .social a {
+    font-size: 0.9rem; /* Adjust icon size */
+    margin-bottom: 5px; /* Reduce spacing */
+  }
+
+  .social a .icon {
+    font-size: 1rem; /* Adjust icon size */
+    margin-right: 5px;
+  }
+
+  .copyright {
+    font-size: 0.8rem; /* Smaller font size */
+    padding-top: 10px; /* Reduce padding */
+  }
+}

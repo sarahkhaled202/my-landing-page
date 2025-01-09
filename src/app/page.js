@@ -115,7 +115,7 @@ export default function Home() {
       </section>
       <div className={styles.container_d}> 
 
-
+{/* paragraph stat */}
       <section className={styles.philosophySection}>
         <div className={styles.textSection}>
           <h2>We bear the responsibility of developing the sector.</h2>
@@ -142,6 +142,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* chart */}
       <section className={styles.chartsSection}>
         <h2>Our charts</h2>
         <div className={styles.charts}>
@@ -161,7 +163,6 @@ export default function Home() {
        <button className={styles.viewAll}>View all news</button>
         </div>
         <section className={styles.grid}>
-
           <div className={styles.cardLarge}>
           <img src="/images/news.jpg" alt="news" className={styles.newsImage} />
 
@@ -188,9 +189,7 @@ export default function Home() {
          <button>Contracts</button>
          </div>
         </div>
-
-             
-            </div>
+           </div>
           ))}
           </div>
         
@@ -225,14 +224,12 @@ export default function Home() {
             <h3>Enterprise</h3>
           </div>
         </div>
-      
-       
       </section>
       </div>
 
       <div>
       <ClientOpinions />
-    </div>
+      </div>
 
    {/* ++++++++++++++++REGISTERSECTION+++++++++++++++ */} 
     <section className={styles.registerSection}>

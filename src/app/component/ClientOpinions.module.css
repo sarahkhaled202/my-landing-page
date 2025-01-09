@@ -67,4 +67,15 @@
   .dot.active {
     opacity: 1;
   }
-  
+  @media (max-width: 480px) {
+    .slider-container {
+      display: flex;
+      justify-content: center; /* محاذاة الحاوية في المنتصف أفقيًا */
+      align-items: center; /* محاذاة المحتوى داخل الحاوية في المنتصف رأسيًا */
+      height: 100vh; /* يمكنك تعديل هذا القيمة حسب الحاجة */
+    }
+    
+    .slider {
+      /* ... باقي الأنماط ... */
+      width: 80%; /* أو أي عرض مناسب */
+    }}
