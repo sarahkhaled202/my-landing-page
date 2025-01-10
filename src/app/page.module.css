@@ -806,7 +806,7 @@ align-items: flex-start;
   row-gap: 10px;
    
 }
-/*++++++++++++++++++ آNEW +++++++++++++++++++*/
+/*++++++++++++++++++ آNEWs +++++++++++++++++++*/
 
 .header {
   display: flex;
@@ -826,6 +826,19 @@ align-items: flex-start;
 }
 .content {
   padding-left: 20px; /* تقليل المسافة الداخلية */
+}
+/* ++++++++++++++++REGISTERSECTION+++++++++++++++ */
+.form {
+  width: 100%;
+  flex-direction: column; /* تغيير الترتيب لعمودي */
+  gap: 15px;
+  align-items: stretch;
+}
+
+.input,
+.button {
+  width: 100%; /* تأكد من تمدد الحقول لملء العرض */
+  max-width: none;
 }
 }
 

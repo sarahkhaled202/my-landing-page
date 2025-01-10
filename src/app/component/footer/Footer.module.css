@@ -5,12 +5,11 @@
     background-image: url("/images/ll.png");
     background-repeat: no-repeat;
     width: 100%;
-
     display: flex;
     flex-direction: column;
-   
-    justify-content: space-between;
     align-items: flex-start;
+   
+    
   }
   .list{
     width: 75%;
@@ -18,7 +17,7 @@
   flex-direction: row;
   justify-content: start;
   gap: 32px;
-  margin-left: 20px;
+  margin-left: 20px; 
   }
   .all{
     width: 100%;
@@ -26,7 +25,7 @@
     flex-direction: row;
     justify-content: space-around;
     margin-right: 50px;
-    
+     
   }
 
   
@@ -69,12 +68,17 @@
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
+    padding: 10px;
+    border-radius: 40%;
+    background-color: rgba(255, 255, 255, 0.1);
   }
   
   .social a .icon {
     display: inline-block;
     margin-right: 8px;
     font-size: 1.2rem;
+    color: white;
+
   }
   
   .copyright {
@@ -86,118 +90,36 @@
     padding-top: 20px;
     color: rgba(255, 255, 255, 0.7);
   }
-  /* iphone */
-  /* General iPhone Styles */
-@media only screen and (max-width: 414px) {
-  .footer {
-    padding: 20px 10px; /* Adjust padding for smaller screens */
-    background-size: cover; /* Ensure background image scales correctly */
-    align-items: center; /* Center-align content */
-  }
-
-  .list {
-    flex-direction: column; /* Stack items vertically */
-    width: 100%; /* Full width for mobile */
-    gap: 16px; /* Reduce gap between items */
-    margin-left: 0; /* Align to the center */
-  }
-
-  .all {
-    flex-direction: column; /* Stack sections vertically */
-    align-items: center; /* Center-align sections */
-    gap: 20px; /* Add space between sections */
-    margin-right: 0;
-  }
-
-  .logo img {
-    width: 100px; /* Scale down logo for smaller screens */
-  }
-
-  .links {
-    margin: 0;
-    text-align: center; /* Center-align text */
-  }
-
-  .links h4 {
-    font-size: 1rem; /* Reduce font size */
-    margin-bottom: 5px;
-  }
-
-  .links li {
-    font-size: 0.9rem; /* Adjust font size */
-    margin-bottom: 5px; /* Reduce spacing */
-  }
-
-  .social a {
-    font-size: 0.9rem; /* Adjust icon size */
-    margin-bottom: 5px; /* Reduce spacing */
-  }
-
-  .social a .icon {
-    font-size: 1rem; /* Adjust icon size */
-    margin-right: 5px;
-  }
-
-  .copyright {
-    font-size: 0.8rem; /* Smaller font size */
-    padding-top: 10px; /* Reduce padding */
-  }
+ 
+  /* Media Query for iPhone 480px */
+@media only screen and (max-width: 480px) {
+      .footer {
+      padding: 15px;
+    }
   
-}
-
-@media only screen and (max-width: 414px) {
-  .footer {
-    padding: 20px 10px; /* Adjust padding for smaller screens */
-    background-size: cover; /* Ensure background image scales correctly */
-    align-items: center; 
-    text-align: center; /* Center-align content horizontally */
-  }
-
-  .list {
-    flex-direction: column; /* Stack items vertically */
-    width: 100%; /* Full width for mobile */
-    gap: 16px; /* Reduce gap between items */
-    margin-left: 0; /* Align to the center */
-  }
-
-  .all {
-    flex-direction: column; /* Stack sections vertically */
-    align-items: center; /* Center-align sections */
-    gap: 20px; /* Add space between sections */
-    margin-right: 0;
-  }
-
-  .logo img {
-    width: 100px; /* Scale down logo for smaller screens */
-  }
-
-  .links {
-    margin: 0;
-    text-align: center; /* Center-align text */
-  }
-
-  .links h4 {
-    font-size: 1rem; /* Reduce font size */
-    margin-bottom: 5px;
-  }
-
-  .links li {
-    font-size: 0.9rem; /* Adjust font size */
-    margin-bottom: 5px; /* Reduce spacing */
-  }
-
-  .social a {
-    font-size: 0.9rem; /* Adjust icon size */
-    margin-bottom: 5px; /* Reduce spacing */
-  }
-
-  .social a .icon {
-    font-size: 1rem; /* Adjust icon size */
-    margin-right: 5px;
-  }
-
-  .copyright {
-    font-size: 0.8rem; /* Smaller font size */
-    padding-top: 10px; /* Reduce padding */
-  }
+    .logo img {
+      width: 100px;
+    }
+    .all {
+      width: 100%;
+      display: flex;
+      flex-direction: column; 
+      gap: 20px;
+    }
+    
+    .list {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+    
+    }
+    .links h4, 
+    .links li,
+    .social a {
+      font-size: 0.9rem;
+    
+    }
+    .copyright {
+      font-size: 0.8rem;
+    }
 }

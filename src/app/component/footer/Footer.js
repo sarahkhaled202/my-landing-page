@@ -4,8 +4,6 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.all}>
-        {/* <div className={styles.container}> */}
-
         {/* Company Links */}
         <div className={styles.list}>
           {/* Logo Section */}
@@ -50,7 +48,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* </div> */}
+    
 
       {/* Copyright */}
       <div className={styles.copyright}>
