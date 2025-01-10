@@ -811,6 +811,58 @@ align-items: flex-start;
 .page_statsSection__X1He5 {
   grid-template-columns: 1fr; /* عرض واحد */
 }
+
+
+
+
+
+
+/*++++++++++++++++++++++++++++++++++ paragraph stat ++++++++++++++++++++++++++++*/
+
+.page_philosophySection__6G2s4 {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.page_textSection__sT5QS {
+  margin-bottom: 30px;
+}
+
+.page_textSection__sT5QS h2 {
+  color: #7c4dff; /* لون بنفسجي */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.page_textSection__sT5QS p {
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.page_statsSection__X1He5 {
+  flex-direction: column;
+  align-items: center;
+}
+.page_stat__aEnCU {
+  flex: 1 1 100px;
+  max-width: 150px;
+  text-align: center;
+}
+
+.page_stat__aEnCU h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.page_stat__aEnCU p {
+  font-size: 1rem;
+  color: #aaa;
+}
 /*++++++++++++++++++ chart +++++++++++++++++++*/
 
 .page_charts__uvd7G {
@@ -851,6 +903,19 @@ align-items: flex-start;
 .page_button__vnlhW {
   width: 100%; /* تأكد من تمدد الحقول لملء العرض */
   max-width: none;
+}
+.page_social__NLAd0 a {
+  display: flex;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem; 
+}
+
+.page_social__NLAd0 a .page_icon__AYuK3 {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 1rem;
 }
 }
 

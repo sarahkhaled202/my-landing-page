@@ -799,6 +799,58 @@ align-items: flex-start;
 .statsSection {
   grid-template-columns: 1fr; /* عرض واحد */
 }
+
+
+
+
+
+
+/*++++++++++++++++++++++++++++++++++ paragraph stat ++++++++++++++++++++++++++++*/
+
+.philosophySection {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.textSection {
+  margin-bottom: 30px;
+}
+
+.textSection h2 {
+  color: #7c4dff; /* لون بنفسجي */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.textSection p {
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.statsSection {
+  flex-direction: column;
+  align-items: center;
+}
+.stat {
+  flex: 1 1 100px;
+  max-width: 150px;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #aaa;
+}
 /*++++++++++++++++++ chart +++++++++++++++++++*/
 
 .charts {
@@ -839,6 +891,19 @@ align-items: flex-start;
 .button {
   width: 100%; /* تأكد من تمدد الحقول لملء العرض */
   max-width: none;
+}
+.social a {
+  display: flex;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem; 
+}
+
+.social a .icon {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 1rem;
 }
 }
 
